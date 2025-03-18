@@ -429,6 +429,7 @@ static int proxy_init_startfiles(proxy_ctx_t *ctx, const char *files) {
             free(flist);
             free(db->buf);
             free(db->fname);
+            free(db);
             return -1;
         }
 
